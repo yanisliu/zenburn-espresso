@@ -1,0 +1,204 @@
+/*
+  @theme Zenburn
+  @override-placeholders html, css, js
+  @author Yanis Liu
+*/
+
+:document-base {
+	color: #dcdccc;
+	background-color: #4f4f4f;
+	insertion-point-color: #dcdccc;
+	selection-background-color: #6a6a6a;
+}
+
+/* @group Generic */
+
+tag, sourcecode, css, python, ruby, javascript {
+	spell-check: disabled;
+}
+
+comment {
+	color: #7f9f7f;
+}
+
+string {
+	color: #cc9393;
+}
+
+operator {
+	color: #9f9d6d;
+}
+
+numeric {
+    color: #8cd0d3;
+}
+
+constant, character {
+	color: #dca3a3;
+}
+
+keyword {
+	color: #cedf99;
+}
+
+comment keyword {
+	color: #7f9f7f;
+	font-weight: bold;
+}
+
+variable {
+	color: #9f9d6d;
+}
+
+function:not(definition) {
+	color: #dfc47d;
+}
+
+function.definition name, class.definition name {
+	font-weight: bold;
+	color: #dfc47d;
+}
+
+invalid {
+	color: #660000;
+	background: rgba(150, 0, 0, 0.08);
+}
+
+/* @end */
+
+/* @group HTML */
+
+tag {
+	color: #e3ceab;
+}
+
+entity.name, tag > name {
+	color: #cedf99;
+	background: #4f4f4f;
+	font-weight: normal;
+}
+
+/* Deprecated elements */
+entity.name[text='applet'],
+entity.name[text='basefont'],
+entity.name[text='center'],
+entity.name[text='dir'],
+entity.name[text='font'],
+entity.name[text='isindex'],
+entity.name[text='menu'],
+entity.name[text='s'],
+entity.name[text='strike'],
+entity.name[text='u'] {
+	background: rgba(150, 0, 0, 0.08);
+}
+
+entity.character {
+	color: #8cd0d3;
+}
+
+attribute-name {
+	color: #e3ceab;
+}
+
+tag.doctype, tag.doctype entity.name {
+	color: #7f9f7f;
+}
+
+comment.cdata {
+	spell-check: disabled;
+}
+
+/* @end */
+
+/* @group CSS */
+
+css.embedded {
+/*	background: #efe8f3;*/
+}
+
+css selector, css selector punctuation, css selector constant {
+	color: #cfd8ad;
+}
+
+css property-name {
+	color: #babda2;
+}
+
+css property-value, css property-value constant, css property-value keyword {
+	color: #8cd0d3;
+}
+
+css punctuation {
+	color: #dcdccc;
+}
+
+css keyword.important {
+	font-weight: bold;
+}
+
+css keyword.control punctuation {
+	color: #e3ceab;
+}
+
+css comment punctuation {
+	color: #7f9f7f;
+}
+
+css color, css color punctuation, css group-start, css group-end {
+	color: #cc9393;
+}
+
+css group-start name {
+	font-weight: bold;
+}
+
+css function parameter {
+	color: #cc9393;
+}
+
+/* @end */
+
+/* @group Javascript */
+
+js.embedded {
+/*	background: #eaebe6;*/
+}
+
+js variable {
+	color: #dcdccc;
+}
+
+js storage.type, js keyword.new {
+	color: #9f9d6d;
+}
+
+js punctuation {
+	color: #9f9d6d;
+}
+
+js comment > punctuation {
+	color: #7f9f7f;
+}
+
+js string > punctuation, js variable.string {
+	color: #cc9393;
+}
+
+js class.constructor > class {
+	color: #dcdccc;
+	font-weight: bold;
+}
+
+js variable.language, js character.escape > punctuation {
+	color: #8cd0d3;
+}
+
+js function.definition > string > name {
+	color: #cc9393;
+}
+
+js function.definition > name, js function.definition > accessor-path > variable {
+	color: #dfc47d;
+}
+
+/* @end */
